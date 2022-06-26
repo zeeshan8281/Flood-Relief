@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   -webkit-font-smoothing: antialiased;
+   
+}
+html{
+   scroll-behavior: smooth;
+}
+.maxwidth{
+   max-width: 1300px;
+   padding: 0 80px;
+   margin: auto;
+}
+.navbar{
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   padding: 15px 0;
+   font-family: 'montserrat', sans-serif;
+   transition: all 0.3s ease;
+}
+.navbar.sticky{
+   padding: 7px 0;
+   background: rgb(42, 142, 157);
+}
+.navbar .maxwidth{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.navbar .menu li{
+   list-style: none;
+   display: inline-block;
+}
+.navbar .menu li a{
+   display: block;
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 25px;
+   transition: color 0.3s ease;
+}
+.btn{
+   display: none;
+   background: rgb(49, 164, 166);
+   color: #fff;
+   font-size: 22px;
+   padding: 10px 30px;
+   font-family: 'ubuntu', sans-serif;
+   border-radius: 6px;
+   transition: all 0.3s ease;
+   box: 2px 2px white;
+   margin-left: 45px;
+   cursor: pointer;
+}
+.btn:hover{
+   color: white;
+   background: rgb(0, 0, 0);
+   transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+   color: white;
+   transition: color 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+   color: #fff;
+}
+
+.home{
+   display: flex;
+   background: url("/images/bg.png") no-repeat center;
+   height: 100vh;
+   background-size: cover;
+   background-attachment: fixed;
+   color: rgb(255, 38, 0);
+   min-height: 500px;
+   font-family: 'ubuntu', sans-serif;
+}
+
+.home .maxwidth {
+    width: 100%;
+    display: flex;
+}
+.home .maxwidth .row{
+    margin-right: 0;
+  }
+.home .homecontent .text1{
+    font-size: 50px;
+    display: flex;
+    position: static;
+    top: 263px;
+    left: 13vw;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.home .homecontent a{
+    display: inline-block;
+    background:rgb(49, 164, 166);
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.home .homecontent a:hover{
+    color: crimson;
+    background: white;
+    border: black;
+}
+.card{
+   width: calc(53%-80px);
+   background: #222;
+   color: #fff;
+   text-align: center;
+   border-radius: 20px;
+   padding: 50px 55px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+* {box-sizing:border-box}
+
+
+
+
+
+/*
+.Marquee-box {
+    position: relative;
+    display: inline-block;
+    width: 491px;
+    height: 203px;
+ }
+ .MyMarquee {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    border-radius: 8px;
+    line-height: 37px;
+    padding: 0px 0;
+    border: 1px solid #8C8C8C;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #000000;
+
+ }
+ .MyMarquee div {
+    display: inline-block;
+    vertical-align: middle;
+ }
+ .MyMarquee a, .MyMarquee img {
+    display: inline-block;
+    text-decoration: underline;
+    color: #000000;
+    vertical-align: middle;
+ }
+
+ .card{
+   width: calc(53%-80px);
+   background: #222;
+   color: #fff;
+   text-align: center;
+   border-radius: 20px;
+   padding: 50px 55px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default 
+.mySlides {
+  display: none;
+}
+
+ Next & previous buttons 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+*/
+/* Position the "next button" to the right 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through 
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+*/
+/* Caption text 
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+*/
+ /* Add rounded corners to the top left and the top right corner of the image */
+ 
+/* button{
+    font-family: sans-serif;
+    color: #ff0000;
+    background-color: #ffffff;
+    border-radius: 1;
+    border-color: #ff0000;
+    font-size: 19px;
+    border: 1px solid #ffffff;
+    padding: 15px 50px;
+    cursor: pointer
+}
+button:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+}*/
